@@ -130,36 +130,12 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
-}
-
-.common_btn::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #00000038;
-    top: 5px;
-    left: 5px;
-    z-index: -1;
-    border-radius: 10px;
-    transition: all linear .3s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    box-shadow: 5px 5px 0px 0px #01010120;
 }
 
 .common_btn:hover {
     background: var(--colorPrimary);
-}
-
-.common_btn:hover:after {
-    top: 0;
-    left: 0;
+    box-shadow: 5px 5px 0px 0px #ea552b25;
 }
 
 .read_btn {
@@ -190,6 +166,18 @@ button {
 
 .read_btn:hover {
     color: var(--colorPrimary);
+}
+
+.breadcrumb {
+    padding: 180px 0px 93px 0px;
+    margin: 0;
+}
+
+.breadcrumb h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 150px;
 }
 
 /*=============================
@@ -1223,6 +1211,359 @@ footer {
 /* footer end */
 /*=============================
     HOME PAGE END
+=============================*/
+
+
+/*=============================
+    PORTFOLIO PAGE START
+=============================*/
+.details_page_header {
+    margin-bottom: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.details_page_header h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 44px;
+}
+
+.portfolio_large {
+    margin-top: 30px;
+}
+
+.portfolio_large_img {
+    position: relative;
+    height: 650px;
+}
+
+.portfolio_large_img a {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background: var(--colorWhite);
+    border-radius: 50%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--colorBlack);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.portfolio_large_img a:hover {
+    color: var(--colorPrimary);
+}
+
+.portfolio_large_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #01010120;
+    padding: 20px 0px 25px 0px;
+}
+
+.portfolio_large_text h2,
+.portfolio_large_text h2 span {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.portfolio_large_text h2 span {
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: #ffffff00;
+}
+
+.portfolio_large_text p {
+    text-transform: uppercase;
+    color: #626262;
+    font-weight: 500;
+}
+
+/*=============================
+    PORTFOLIO PAGE END
+=============================*/
+
+
+/*=============================
+    PORTFOLIO DETAILS START
+=============================*/
+.portfolio_details_header {
+    border: 1px solid #01010110;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.portfolio_details_header li {
+    border-right: 1px solid #01010110;
+    width: 20%;
+    padding: 60px;
+}
+
+.portfolio_details_header li:last-child {
+    border: none;
+}
+
+.portfolio_details_header li h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.portfolio_details_header li p {
+    color: #626262;
+}
+
+.portfolio_details_header li .link a {
+    font-size: 16px;
+    color: var(--colorBlack);
+    margin-right: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.portfolio_details_header li .link a:last-child {
+    margin-right: 0;
+}
+
+.portfolio_details_header li .link a:hover {
+    color: var(--colorPrimary);
+}
+
+.portfolio_details_img {
+    height: 650px;
+    margin-top: 60px;
+}
+
+.portfolio_details_text h2 {
+    font-weight: 700;
+    font-size: 42px;
+    margin-top: 50px;
+}
+
+.portfolio_details_text p {
+    margin-top: 30px;
+    color: #626262;
+}
+
+.portfolio_details_center_img {
+    margin-top: 25px;
+    height: 650px;
+}
+
+/*=============================
+    PORTFOLIO DETAILS END
+=============================*/
+
+
+/*=============================
+    SERVICES START
+=============================*/
+.services_page {}
+
+.single_services {
+    background: var(--colorWhite);
+    padding: 60px 50px;
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 60px;
+    max-width: 380px;
+}
+
+.single_services span {
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.single_services h3 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.single_services p {
+    margin: 30px 0px;
+}
+
+.single_services a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: var(--colorBlack);
+    border-radius: 50%;
+    color: var(--colorWhite);
+    margin: 0 auto;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_services a i {
+    transform: rotate(40deg);
+}
+
+.single_services a:hover {
+    background: var(--colorPrimary);
+}
+
+.pricing {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.single_pricing {
+    padding: 60px 35px;
+    background: var(--colorWhite);
+    margin-top: 25px;
+}
+
+.single_pricing h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.single_pricing h2 {
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_pricing span {
+    color: #626262;
+}
+
+.single_pricing p {
+    color: #626262;
+    border-top: 1px solid #01010110;
+    margin-top: 25px;
+    padding-top: 25px;
+    margin-bottom: 65px;
+}
+
+.single_pricing a {
+    width: 100%;
+    text-align: center;
+}
+
+.single_pricing:hover h2,
+.single_pricing.active h2 {
+    color: var(--colorPrimary);
+}
+
+.single_pricing:hover a,
+.single_pricing.active a {
+    background: var(--colorPrimary);
+    box-shadow: 5px 5px 0px 0px #ea552b25;
+}
+
+
+
+
+.faq {
+    background: var(--colorWhite);
+}
+
+.faq .title {
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.faq_area {}
+
+.faq_area .accordion {}
+
+.faq_area .accordion-item {
+    margin-top: 20px;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.faq_area .accordion-header {}
+
+.faq_area .accordion-header button {
+    background: #e1eaf4;
+    border: none !important;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--colorBlack);
+    padding: 30px;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.faq_area .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq_area .accordion .accordion-body {
+    padding: 30px;
+    background: #fbe8de;
+}
+
+.faq_area .accordion .accordion-body p {
+    color: #626262;
+    font-size: 20px;
+}
+
+.faq_area .accordion-button:not(.collapsed) {
+    background: var(--colorPrimary) !important;
+    color: var(--colorWhite) !important;
+}
+
+.faq_area .accordion-button::after {
+    background: url(../images/faq_arrow_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.faq_area .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+/*=============================
+    SERVICES END
 =============================*/
 
 

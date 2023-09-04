@@ -22,6 +22,12 @@ $(function () {
     $('.counter').countUp();
 
 
+    //=====STICKY SIDEBAR====== 
+    $("#sticky_sidebar").stickit({
+        top: 90,
+    })
+
+
 
     //=======TESTI SLIDER======
     $('.testi_slider').slick({

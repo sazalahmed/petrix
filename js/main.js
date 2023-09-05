@@ -28,7 +28,6 @@ $(function () {
     })
 
 
-
     //=======TESTI SLIDER======
     $('.testi_slider').slick({
         slidesToShow: 1,
@@ -38,41 +37,28 @@ $(function () {
         dots: false,
         arrows: true,
 
-        // responsive: [
-        //     {
-        //         breakpoint: 1400,
-        //         settings: {
-        //             slidesToShow: 2,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1200,
-        //         settings: {
-        //             slidesToShow: 2,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 992,
-        //         settings: {
-        //             slidesToShow: 2,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 1,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 576,
-        //         settings: {
-        //             slidesToShow: 1,
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
 
     });
 
+
+    //=======SMALL DEVICE MENU ICON======
+    $(".navbar-toggler").on("click", function () {
+        $(".navbar-toggler").toggleClass("show");
+    });
 
 
 });

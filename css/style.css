@@ -1,3 +1,25 @@
+/* ***************************************
+Template Name: Petrix - Personal Portfolio HTML Template
+Author:  
+Author Email: 
+website: 
+Version: 1.0
+Description: 
+***************************************
+
+CSS TABLE OF CONTENTS
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE
+03. PORTFOLIO PAGE
+04. PORTFOLIO DETAILS
+05. SERVICES PAGE
+06. SERVICE DETAILS
+07. BLOG GRID PAGE
+08. BLOG LIST PAGE
+09. BLOG DETAILS
+10. CONTACT US PAGE
+
 /*=============================
     GLOBAL CSS START
 =============================*/
@@ -257,6 +279,45 @@ button {
     box-shadow: none;
 }
 
+/* for mobile menu start */
+.main_menu .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0;
+    border-radius: 3px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    margin-right: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.main_menu .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.main_menu .navbar-toggler.show {
+    background: var(--colorBlack);
+}
+
+.main_menu .navbar-toggler .close_icon_close {
+    display: none;
+}
+
+.main_menu .navbar-toggler.show .menu_icon_bar {
+    display: none;
+}
+
+.main_menu .navbar-toggler.show .close_icon_close {
+    display: block;
+}
+
+/* for mobile menu end */
+
 /*=============================
     GLOBAL CSS END
 =============================*/
@@ -339,11 +400,9 @@ button {
 
 /* menu end */
 
-
 /* banner start */
 .banner {
     height: 100vh;
-    border-bottom: 1px solid #ddd;
 }
 
 .banner div {
@@ -359,7 +418,6 @@ button {
 
 .banner_img .img {
     width: 560px;
-    margin: 0 auto;
     height: 800px !important;
     position: absolute;
     left: 50%;
@@ -379,6 +437,7 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .banner_text_top {
@@ -501,11 +560,10 @@ button {
 }
 
 .banner_text_bottom .text ul li a:hover {
-    font-weight: 700;
+    color: var(--colorPrimary);
 }
 
 /* banner end */
-
 
 /* about start */
 .about {
@@ -572,7 +630,6 @@ button {
 
 /* about end */
 
-
 /* skills start */
 .skills {
     background: var(--colorBlack);
@@ -621,11 +678,10 @@ button {
     color: var(--colorWhite);
     font-weight: 600;
     font-size: 22px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 /* skills end */
-
 
 /* award start */
 .award {
@@ -656,7 +712,6 @@ button {
 }
 
 /* award end */
-
 
 /* experience start */
 .experience_text {
@@ -712,7 +767,6 @@ button {
 }
 
 /* experience end */
-
 
 /* portfolio start */
 .portfolio {
@@ -828,7 +882,6 @@ button {
 
 /* portfolio end */
 
-
 /* services start */
 .services_text p {
     font-weight: 600;
@@ -897,6 +950,10 @@ button {
     border-radius: 50%;
     font-size: 20px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .services_text ul li:hover .img {
@@ -912,7 +969,6 @@ button {
 }
 
 /* services end */
-
 
 /* testimonial start */
 .testimonial_bg {
@@ -1061,7 +1117,6 @@ button {
 
 /* testimonial end */
 
-
 /* blog start */
 .single_blog {
     background: var(--colorWhite);
@@ -1122,7 +1177,6 @@ button {
 
 /* blog end */
 
-
 /* contact box start */
 .contact_box {
     background: var(--colorBlack);
@@ -1160,7 +1214,6 @@ button {
 }
 
 /* contact box end */
-
 
 /* footer start */
 footer {
@@ -1310,7 +1363,6 @@ footer {
     HOME PAGE END
 =============================*/
 
-
 /*=============================
     PORTFOLIO PAGE START
 =============================*/
@@ -1392,7 +1444,6 @@ footer {
     PORTFOLIO PAGE END
 =============================*/
 
-
 /*=============================
     PORTFOLIO DETAILS START
 =============================*/
@@ -1471,12 +1522,9 @@ footer {
     PORTFOLIO DETAILS END
 =============================*/
 
-
 /*=============================
-    SERVICES START
+    SERVICES PAGE START
 =============================*/
-.services_page {}
-
 .single_services {
     background: var(--colorWhite);
     padding: 60px 50px;
@@ -1583,9 +1631,6 @@ footer {
     box-shadow: 5px 5px 0px 0px #ea552b25;
 }
 
-
-
-
 .faq {
     background: var(--colorWhite);
 }
@@ -1598,10 +1643,6 @@ footer {
     margin-bottom: 30px;
 }
 
-.faq_area {}
-
-.faq_area .accordion {}
-
 .faq_area .accordion-item {
     margin-top: 20px;
     border-radius: 0 !important;
@@ -1610,8 +1651,6 @@ footer {
     -ms-border-radius: 0 !important;
     -o-border-radius: 0 !important;
 }
-
-.faq_area .accordion-header {}
 
 .faq_area .accordion-header button {
     background: #e1eaf4;
@@ -1670,9 +1709,8 @@ footer {
 }
 
 /*=============================
-    SERVICES END
+    SERVICES PAGE END
 =============================*/
-
 
 /*=============================
     SERVICE DETAILS START
@@ -1814,9 +1852,8 @@ footer {
     SERVICE DETAILS END
 =============================*/
 
-
 /*=============================
-    BLOG GRID START
+    BLOG GRID PAGE START
 =============================*/
 .blog_grid .single_blog {
     margin-top: 0;
@@ -1824,15 +1861,12 @@ footer {
 }
 
 /*=============================
-    BLOG GRID END
+    BLOG GRID PAGE END
 =============================*/
-
 
 /*=============================
-    BLOG LIST START
+    BLOG LIST PAGE START
 =============================*/
-.blog_list {}
-
 .blog_list_item {
     padding: 30px;
     background: var(--colorWhite);
@@ -1863,8 +1897,6 @@ footer {
     color: var(--colorPrimary);
 }
 
-.blog_list_item p {}
-
 .blog_list_item .img {
     height: 390px;
     margin-top: 27px;
@@ -1874,7 +1906,6 @@ footer {
 .blog_list .pagination {
     justify-content: start;
 }
-
 
 .sidebar_search {
     background: var(--colorWhite);
@@ -2029,17 +2060,12 @@ footer {
 }
 
 /*=============================
-    BLOG LIST END
+    BLOG LIST PAGE END
 =============================*/
-
 
 /*=============================
     BLOG DETAILS START
 =============================*/
-.blog_details {}
-
-.blog_details_area {}
-
 .blog_det_large_img {
     height: 650px;
     margin-top: 25px;
@@ -2210,17 +2236,12 @@ footer {
     BLOG DETAILS END
 =============================*/
 
-
 /*=============================
-    CONTACT US START
+    CONTACT US PAGE START
 =============================*/
-.contact_us {}
-
 .contact_us .details_page_header {
     padding: 0px 140px;
 }
-
-.contact_us .details_page_header h2 {}
 
 .contact_header {
     background: var(--colorWhite);
@@ -2337,18 +2358,9 @@ footer {
 }
 
 .footer_2 .footer_link ul li {
-    border-right: 1px solid #fff2;
+    border-color: #fff2 !important;
 }
 
 /*=============================
-    CONTACT US END
-=============================*/
-
-
-
-/*=============================
-    START
-=============================*/
-/*=============================
-    END
+    CONTACT US PAGE END
 =============================*/
